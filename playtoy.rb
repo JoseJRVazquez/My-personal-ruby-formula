@@ -75,4 +75,19 @@ cash.reverse
 cash.reverse!
 #you can add arrasy to your array if you want
 cash << ["love", "disgust", 3
-]
+s]
+
+
+#OMG, you can actually find out what methods you can apply to a class or instance by typing in the name of the object
+#then you can attach to it .methods
+cash.methods
+
+#OH BTW, Note: Class names always start with a capital letter and use camel-case.
+
+#add .count to it and find out how many there actually are numerically
+
+cash.methods.count #sweet
+
+#Not surw what this is, but I want to find out
+"mystring".methods.count
+
