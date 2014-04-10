@@ -63,3 +63,16 @@ end
 end
 
 
+#Arrays
+
+#declare the name, then the numbers, add as you go, or shovel them in
+cash = [2, 4, 6, 7, 20, 1200]
+#Add more to the end if you want by shoveling
+cash << [15]
+# reverse them if you wish 
+cash.reverse
+#reverese them for good if you really feel up to it
+cash.reverse!
+#you can add arrasy to your array if you want
+cash << ["love", "disgust", 3
+]
