@@ -91,3 +91,96 @@ cash.methods.count #sweet
 #Not surw what this is, but I want to find out
 "mystring".methods.count
 
+#Another interesting one
+
+
+class Book
+  def title_pages_author(title, pages, author)
+    @title, @pages, @author = title, pages, author
+  end
+  
+  def title
+    @title
+  end
+  
+  def pages
+    @pages
+  end
+  
+  def author
+    @author
+  end
+end
+
+#uber cool, setting an instance that does not require that you preset the value when Initialized
+
+class President
+  attr_accessor :age
+
+  def initialize(years)
+    @age = years
+  end
+end
+
+pres = President.new(49)
+p pres.age
+
+#=> 49
+
+
+#Im gonna try this twofer so bear with me
+
+
+class Signup
+  attr_accessor :name, :uname, :membership
+
+  def initialize(name, uname, membership)
+    @name, @uname, @membership = name, uname, membership
+  end
+end
+
+client = Signup.new("John", "JohnDoe", "free")
+client = Signup.new("Jose", "JoseJRVazquez", "paid")
+p "Welcome #{client.name}, your user name  is #{client.name} and your membership is #{client.membership}"
+
+#=> "it works as it is now
+
+#This allows you to set a class method, which is set to self automatically 
+class UnitedStatesPresident
+  attr_accessor :age, :party
+
+  def initialize(years, party)
+    @age, @party = years, party
+  end
+
+  def self.citizenship
+    "United States of America"
+  end
+end
+
+p UnitedStatesPresident.citizenship
+#=> "United States of America"
+
+#It works, so how to use this in a signup
+
+#Tried this with a Class Metho
+class Signup
+  attr_accessor :name, :uname
+
+  def initialize(name, uname)
+    @name, @uname = name, uname
+  end
+
+  def self.user
+    "Free Account"
+  end
+end
+
+client = Signup.new("John", "JohnDoe")
+
+p "Hello #{client.name}, you have a #{Signup.user}, your handle is #{client.uname}"
+
+
+
+
+
