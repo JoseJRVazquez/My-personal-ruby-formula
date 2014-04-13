@@ -79,7 +79,7 @@ s]
 
 
 #OMG, you can actually find out what methods you can apply to a class or instance by typing in the name of the object
-#then you can attach to it .methods
+#then you can attach to it .methods  - Ok lets hope I remeber this stuff
 cash.methods
 
 #OH BTW, Note: Class names always start with a capital letter and use camel-case.
