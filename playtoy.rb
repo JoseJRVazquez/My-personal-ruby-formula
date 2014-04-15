@@ -181,6 +181,6 @@ client = Signup.new("John", "JohnDoe")
 p "Hello #{client.name}, you have a #{Signup.user}, your handle is #{client.uname}"
 
 
-
+#I am starting to wonder is Objective C has the same sort of methods in its code makeup?
 
 
