@@ -183,4 +183,36 @@ p "Hello #{client.name}, you have a #{Signup.user}, your handle is #{client.unam
 
 #I am starting to wonder is Objective C has the same sort of methods in its code makeup?
 
+#Heres a few lines I played with for HASHES
+
+def get_paper(word)
+paper = {:stock => "a common stock paper 10# weight", :extra => "super bold"}
+p paper[word]
+end
+get_paper(:stock)
+# => "a common stock paper 10# weight" 
+get_paper(:extra)
+# => "super bold" 
+
+
+class User
+  attr_accessor :name, :email, :bio, :age, :sex #set get
+  
+  def initialize(config = {}) #initializer method
+    @name = config[:name] || "n/a" # name attribute
+    @email = config[:email] || "n/a" # email attribute
+    @bio = config[:bio] || "n/a" # bio attribute
+    @age = config[:age] || "n/a" # age attribute
+    @sex = config[:sex] || "n/a" # sex attribute
+  end
+end
+  
+  def hash_to_array(h = {}) #defined method, argument and h=Hash Object
+  a = [] #stating return variable
+  h.each do |key, value|
+    p "name is #{:name}", "age is #{:age}", "sex is #{sex}"
+  end #close each loop
+  h #returning the array
+end #closes method
+
 
