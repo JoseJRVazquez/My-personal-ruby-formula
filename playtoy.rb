@@ -215,4 +215,22 @@ end
   h #returning the array
 end #closes method
 
+#So you can inherit methods from other classes
+
+class Father
+  def say_hello
+    "hello"
+  end
+end
+
+class Daughter < Father
+end
+
+d = Daughter.new
+d.say_hello
+#=> "hello"
+
+
+
+
 
