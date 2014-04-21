@@ -232,6 +232,9 @@ d.say_hello
 
 #what classes cover timers?
 
+# do code blocks matter more than methods?
+
+
 
 
 
