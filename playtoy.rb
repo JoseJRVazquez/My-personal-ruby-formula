@@ -235,6 +235,12 @@ d.say_hello
 # do code blocks matter more than methods?
 
 
+items = [1, 2, 3, 4]
+items.each do |item|
+  p item += 3
+end
+
+
 
 
 
