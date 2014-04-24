@@ -215,7 +215,7 @@ end
   h #returning the array
 end #closes method
 
-#So you can inherit methods from other classes
+#So you can inherit methods from other classes s
 
 class Father
   def say_hello
